@@ -269,7 +269,7 @@ class SnowflakeConnectionManager(SQLConnectionManager):
                     role=creds.role,
                     autocommit=True,
                     client_session_keep_alive=creds.client_session_keep_alive,
-                    application="dbt",
+                    application='Snowplow_BDP',
                     insecure_mode=creds.insecure_mode,
                     **creds.auth_args(),
                 )
